@@ -1,13 +1,13 @@
-import { BsStars } from 'react-icons/bs';
-import { FaBootstrap, FaCss3Alt, FaHtml5, FaJs, FaPhp } from 'react-icons/fa';
-import { SiFigma, SiMysql, SiTailwindcss } from 'react-icons/si';
+import { FiUploadCloud } from 'react-icons/fi';
+import { FaCss3Alt, FaHtml5, FaJs, FaPhp, FaReact } from 'react-icons/fa';
+import { SiClaude, SiDocker, SiExpo, SiFigma, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPostgresql, SiRailway, SiRender, SiSymfony, SiTailwindcss, SiTypescript, SiVercel, SiYaml } from 'react-icons/si';
 
 import { GlowBox } from '../components/glow-box';
 import { SectionTitle } from '../components/section-title.component';
 
 const techs = [
 	{
-		heading: 'Languages que je travaille avec',
+		heading: 'Languages & Runtimes I work With',
 		items: [
 			{
 				title: 'PHP',
@@ -29,20 +29,55 @@ const techs = [
 				icon: <FaJs color='rgb(240, 219, 79)' />,
 				color: 'rgba(240, 219, 79, 0.6)',
 			},
+			{
+				title: 'TypeScript',
+				icon: <SiTypescript color='rgb(49, 120, 198)' />,
+				color: 'rgba(49, 120, 198, 0.6)',
+			},
+			{
+				title: 'Docker',
+				icon: <SiDocker color='rgb(13, 109, 253)' />,
+				color: 'rgba(13, 109, 253, 0.6)',
+			},
+			{
+				title: 'YAML',
+				icon: <SiYaml color='rgb(203, 55, 55)' />,
+				color: 'rgba(203, 55, 55, 0.6)',
+			},
+			{
+				title: 'Node.js',
+				icon: <SiNodedotjs color='rgb(83, 163, 83)' />,
+				color: 'rgba(83, 163, 83, 0.6)',
+			},
 		],
 	},
 	{
-		heading: "Outils qui m'aide a construire mes sites",
+		heading: 'Frameworks & Tools',
 		items: [
+			{
+				title: 'React',
+				icon: <FaReact color='rgb(97, 219, 251)' />,
+				color: 'rgba(97, 219, 251, 0.6)',
+			},
+			{
+				title: 'Next.js',
+				icon: <SiNextdotjs color='rgb(255, 255, 255)' />,
+				color: 'rgba(255, 255, 255, 0.6)',
+			},
+			{
+				title: 'Expo.js',
+				icon: <SiExpo color='rgb(200, 200, 200)' />,
+				color: 'rgba(200, 200, 200, 0.6)',
+			},
+			{
+				title: 'Symfony',
+				icon: <SiSymfony color='rgb(255, 255, 255)' />,
+				color: 'rgba(255, 255, 255, 0.6)',
+			},
 			{
 				title: 'Tailwind CSS',
 				icon: <SiTailwindcss color='rgb(6, 182, 212)' />,
 				color: 'rgba(6, 182, 212, 0.7)',
-			},
-			{
-				title: 'Bootstrap',
-				icon: <FaBootstrap color='rgb(125, 17, 248)' />,
-				color: 'rgba(125, 17, 248, 0.75)',
 			},
 			{
 				title: 'Figma',
@@ -51,18 +86,53 @@ const techs = [
 			},
 			{
 				title: 'Claude AI',
-				icon: <BsStars color='rgb(210, 160, 100)' />,
-				color: 'rgba(210, 160, 100, 0.6)',
+				icon: <SiClaude color='rgb(178, 140, 96)' />,
+				color: 'rgba(178, 140, 96, 0.6)',
 			},
 		],
 	},
 	{
-		heading: "Base de données que j'utilise",
+		heading: 'Databases I Use',
 		items: [
 			{
 				title: 'MySQL',
 				icon: <SiMysql color='rgb(0, 122, 158)' />,
 				color: 'rgba(0, 122, 158, 0.75)',
+			},
+			{
+				title: 'MongoDB',
+				icon: <SiMongodb color='rgb(77, 205, 100)' />,
+				color: 'rgba(77, 205, 100, 0.65)',
+			},
+			{
+				title: 'PostgreSQL',
+				icon: <SiPostgresql color='rgb(51, 103, 145)' />,
+				color: 'rgba(51, 103, 145, 0.65)',
+			},
+		],
+	},
+	{
+		heading: 'Deployment Services',
+		items: [
+			{
+				title: 'Railway',
+				icon: <SiRailway color='rgb(188, 65, 217)' />,
+				color: 'rgba(188, 65, 217, 0.6)',
+			},
+			{
+				title: 'Surge',
+				icon: <FiUploadCloud color='rgb(200, 200, 200)' />,
+				color: 'rgba(200, 200, 200, 0.6)',
+			},
+			{
+				title: 'Vercel',
+				icon: <SiVercel color='rgb(255, 255, 255)' />,
+				color: 'rgba(255, 255, 255, 0.6)',
+			},
+			{
+				title: 'Render',
+				icon: <SiRender color='rgb(70, 201, 58)' />,
+				color: 'rgba(70, 201, 58, 0.6)',
 			},
 		],
 	},
@@ -94,7 +164,7 @@ export const TechStack = () => {
 			<div>
 				<SectionTitle
 					title='Tech'
-					subTitle='SET'
+					subTitle='STACK'
 				/>
 			</div>
 		</section>

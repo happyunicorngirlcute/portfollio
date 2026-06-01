@@ -3,31 +3,18 @@ import { IoMailOutline } from 'react-icons/io5';
 
 import { FloatingButton } from '../components/floating-button';
 import { GlowLink } from '../components/glow-box-link';
-import { TextHover } from '../components/text-hover.component';
 
 export const InfoSection = () => {
 	return (
 		<div className='hero-section'>
-			<a
-				href='https://github.com/nahildiabi8-stack/portfollio'
-				target='_blank'
-				rel='noopener noreferrer'
-				className='github-ribbon'
-			>
-				<div>⭐ Star ce repo</div>
-				<span></span>
-			</a>
 			<FloatingButton
-				label='A Propos De Moi'
+				label='About Me'
 				className='first'
 				href='/#about-me'
 			/>
-			<p>Mon nom est</p>
-			<TextHover
-				text='NAHIL'
-				className='name'
-			/>
-			<p>Développeur Full Stack</p>
+			<p>My name is</p>
+			<p className='name'>NAHIL</p>
+			<p>Full Stack Developer</p>
 			<FloatingButton
 				label='Tech'
 				className='sec'
@@ -37,7 +24,7 @@ export const InfoSection = () => {
 			<div className='blur'></div>
 			<div className='bottom-bar'>
 				<GlowLink
-					href='https://github.com/nahildiabi8-stack'
+					href='https://github.com/happyunicorngirlcute'
 					color='rgba(255, 255, 255, 0.4)'
 					icon={<FaGithub color='rgba(255, 255, 255,0.9)' />}
 					aria-label='github'
@@ -45,8 +32,8 @@ export const InfoSection = () => {
 				
 				<GlowLink
 					href='mailto:nahildiabi8@gmail.com'
-					icon={<IoMailOutline color='rgb(18, 122, 209)' />}
-					color=' rgb(18, 122, 209,0.7)'
+					icon={<IoMailOutline color='rgb(248, 151, 0)' />}
+					color='rgba(248, 151, 0, 0.7)'
 					aria-label='mail'
 				/>
 			</div>

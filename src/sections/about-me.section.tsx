@@ -6,17 +6,17 @@ const timeline = [
 		items: [
 			{
 				title: 'Full Stack Developer',
-				timePeriod: '2022 - Present',
+				timePeriod: '2025 - Present',
 				description: (
 					<ul>
 						<li>
-							J'ai créer beaucoup de petit projets comme  {' '}
-							<strong>Xeno</strong>, une IA qui arrive a construire du code vraiment riche. Speclaisée en backend
+							Created many small projects like{' '}
+							<strong>Xeno</strong>, an AI that can build rich code. Specialized in backend
 						</li>
 						<li>
-							Conception et développement de plusieurs tableaux de bord interactifs de visualisation de données.
+							Designed and developed several interactive data visualization dashboards.
 						</li>
-						<li>J'ai aussi créer ce petit site, qui fait partit de mes projects.</li>
+						<li>I also built this site, which is part of my projects.</li>
 					</ul>
 				),
 			},
@@ -27,10 +27,10 @@ const timeline = [
 		title: 'Education',
 		items: [
 			{
-				title: 'Formation Développeur ',
+				title: 'Developer Training',
 				place: 'Garage404, Saint Etienne Rue Tarentaize',
-				timePeriod: '2022 - Present',
-				description: "J'ai récamment rejoins cette formation pour devenir un développeur, je suis fascinée par le backend et j'aimerais devenir un expert en PHP.",
+				timePeriod: '2025 - Present',
+				description: "I recently joined this training to become a developer. I'm fascinated by backend development and aim to become a PHP expert.",
 			},
 		],
 	},
@@ -52,17 +52,17 @@ export const AboutMe = () => {
 				<div className='intro'>
 					<p style={{ marginTop: '20px' }}>
 
-						Bonjour je suis Nahil, je suis un Développeur Full Stack
+						Hi, I'm Nahil, a Full Stack Developer
 					</p>
 					<p>
-						J'ai travaillé avec <strong>PHP</strong> et{' '}
-						<strong>tailwind</strong> depuis <strong>2 ans</strong>,
-						construire des sites bien chargé en back-end
+						I've been working with <strong>PHP</strong> and{' '}
+						<strong>Tailwind</strong> for <strong>2 years</strong>,
+						building back-end heavy websites
 					</p>
 					<p>
-						J'aime résoudre des problèmes, apprendre de nouvelles choses et expérimenter avec
-						différentes technologies. Quand je ne code pas, je travaille probablement sur
-						un projet personnel ou j'explore quelque chose de nouveau.
+						I enjoy solving problems, learning new things, and experimenting with
+						different technologies. When I'm not coding, I'm probably working on
+						a personal project or exploring something new.
 					</p>
 				</div>
 				<div>

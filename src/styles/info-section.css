@@ -10,13 +10,13 @@
 
 .hero-section .name {
 	font-size: 7rem;
-	color: rgb(31, 195, 255);
+	color: #F89700;
 }
 
 .blur {
 	height: 12rem;
 	width: 12rem;
-	background-color: hsl(196, 100%, 56%, 0.7);
+	background-color: #F89700;
 	filter: blur(100px);
 	border-radius: 100px;
 	z-index: -1;

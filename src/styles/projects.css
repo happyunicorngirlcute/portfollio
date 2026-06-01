@@ -1,0 +1,116 @@
+.projects {
+	min-height: 100vh;
+	display: flex;
+	padding: 2rem 4rem;
+}
+
+.projects > div {
+	width: 50%;
+	padding: 1rem;
+}
+
+.projects .title {
+	margin-top: 2rem;
+	overflow: hidden;
+}
+
+.projects-content {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	margin-top: 1.5rem;
+}
+
+.project-row {
+	display: flex;
+}
+
+.row-start {
+	justify-content: flex-start;
+}
+
+.row-end {
+	justify-content: flex-end;
+}
+
+.project-card {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	width: 520px;
+	transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+	transform: translateY(-3px);
+}
+
+.project-image {
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	border-radius: 12px;
+	border: 3px solid rgba(248, 151, 0, 0.35);
+}
+
+.project-title {
+	font-family: 'Fugaz One', sans-serif;
+	color: #fff;
+	font-size: 1.3rem;
+	margin: 0;
+	letter-spacing: 0.05rem;
+}
+
+.project-desc {
+	font-family: 'Open Sans', sans-serif;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 0.9rem;
+	line-height: 1.5;
+	margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+	.project-card {
+		width: 420px;
+	}
+
+	.project-image {
+		height: 210px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.projects {
+		padding: 1rem 2rem;
+		flex-direction: column-reverse;
+		gap: 1rem;
+	}
+
+	.projects > div {
+		width: 100%;
+		padding: 0.5rem;
+	}
+
+	.projects .title {
+		margin-top: 2rem;
+	}
+
+	.projects-content {
+		margin-top: 1rem;
+		gap: 2rem;
+	}
+
+	.project-row {
+		justify-content: center !important;
+	}
+
+	.project-card {
+		width: 100%;
+		max-width: 520px;
+	}
+
+	.project-image {
+		height: 200px;
+	}
+}

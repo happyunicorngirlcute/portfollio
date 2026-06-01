@@ -96,7 +96,7 @@
 	font-size: 1.25rem;
 	font-weight: 500;
 	color: #fff;
-	background: linear-gradient(to top right, #ffffff00, #1fc3ff21);
+	background: linear-gradient(to top right, #ffffff00, #f8970021);
 	padding: 1.5rem 3rem;
 	border-radius: 12px;
 	text-align: center;
@@ -109,7 +109,7 @@
 }
 
 .about-me .intro strong {
-	color: rgb(31, 195, 255); /* Your primary color */
+	color: rgb(248, 151, 0); /* Your primary color */
 	font-weight: 600;
 }
 
@@ -148,7 +148,7 @@
 	}
 
 	.about-me .intro strong {
-		color: rgb(31, 195, 255);
+		color: rgb(248, 151, 0);
 		font-weight: 600;
 	}
 

@@ -1,6 +1,6 @@
 :root {
-	--text-primary: 8rem;
-	--text-secondary: 11rem;
+	--text-primary: clamp(2.5rem, 4vw, 3.5rem);
+	--text-secondary: clamp(3.5rem, 5vw, 5rem);
 }
 
 .title {
@@ -8,6 +8,7 @@
 	margin: auto;
 	padding: 2rem;
 	width: fit-content;
+	max-width: 100%;
 	position: sticky;
 	top: 50vh;
 }
@@ -15,7 +16,7 @@
 .title .primary-text {
 	color: white;
 	font-size: var(--text-primary);
-	margin-bottom: 3rem;
+	margin-bottom: 0.5rem;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 	font-family: 'Fugaz One', sans-serif;
@@ -29,16 +30,17 @@
 	font-family: 'Fugaz One', sans-serif;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 3px;
-	-webkit-text-stroke-color: hsl(196, 100%, 56%);
+	-webkit-text-stroke-color: #F89700;
 }
 
 @media screen and (max-width: 700px) {
 	:root {
-		--text-primary: 5rem;
-		--text-secondary: 6rem;
+		--text-primary: 2.5rem;
+		--text-secondary: 3.5rem;
 	}
 	.title {
 		position: relative;
 		top: 0rem;
+		padding: 1rem;
 	}
 }
