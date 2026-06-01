@@ -112,7 +112,7 @@ const techs = [
 		],
 	},
 	{
-		heading: 'Deployment Services',
+		heading: 'Deployment Services I use',
 		items: [
 			{
 				title: 'Railway',
