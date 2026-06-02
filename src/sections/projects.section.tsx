@@ -42,28 +42,28 @@ export const Projects = () => {
 		},
 		{
 			siteUrl: '#',
-			sourceUrl: 'https://github.com/user/solstice',
+			sourceUrl: 'https://github.com/happyunicorngirlcute/Paiement-Collaboratif',
 			isSourceCodeAvailable: true,
-			title: 'Solstice',
-			desc: 'Weather app with animated maps, 7-day forecasts, and location-based alerts.',
-			img: '/placeholder.png',
+			title: 'Paye Ton Pote',
+			desc: 'One of my first Symfony projects, transactions using Stripe API, authentifications and more. The project is in french. THe frontend was HEAVILY AI assisted, Because this project was kinda like a "pratice", I just focused more on the backend. Twig and PHP (Symfony Framework) used for this project. This project is not that good compared to the rest, only reason Im showcasing it is because of the transaction, this is guaranteed to get replaced once I do more projects ',
+			img: '/PayeTonPoteScreenshot.png',
 		},
-		{
-			siteUrl: '#',
-			sourceUrl: 'https://github.com/user/cipherkeep',
-			isSourceCodeAvailable: true,
-			title: 'CipherKeep',
-			desc: 'End-to-end encrypted password manager with biometric auth and cloud sync.',
-			img: '/placeholder.png',
-		},
-		{
-			siteUrl: '#',
-			sourceUrl: 'https://github.com/user/arcadia',
-			isSourceCodeAvailable: true,
-			title: 'Arcadia',
-			desc: 'Social platform for game devs to share prototypes, get feedback, and collaborate.',
-			img: '/placeholder.png',
-		},
+		// {
+		// 	siteUrl: '#',
+		// 	sourceUrl: 'https://github.com/user/cipherkeep',
+		// 	isSourceCodeAvailable: true,
+		// 	title: 'CipherKeep',
+		// 	desc: 'End-to-end encrypted password manager with biometric auth and cloud sync.',
+		// 	img: '/placeholder.png',
+		// },
+		// {
+		// 	siteUrl: '#',
+		// 	sourceUrl: 'https://github.com/user/arcadia',
+		// 	isSourceCodeAvailable: true,
+		// 	title: 'Arcadia',
+		// 	desc: 'Social platform for game devs to share prototypes, get feedback, and collaborate.',
+		// 	img: '/placeholder.png',
+		// },
 	];
 
 	return (
