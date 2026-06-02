@@ -84,11 +84,6 @@ const techs = [
 				icon: <SiFigma color='rgb(242, 78, 30)' />,
 				color: 'rgba(242, 78, 30, 0.6)',
 			},
-			{
-				title: 'Claude AI',
-				icon: <SiClaude color='rgb(178, 140, 96)' />,
-				color: 'rgba(178, 140, 96, 0.6)',
-			},
 		],
 	},
 	{
