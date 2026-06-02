@@ -17,37 +17,49 @@ export const Projects = () => {
 
 	const projects = [
 		{
-			href: 'https://github.com/happyunicorngirlcute/Candy-Blossom',
+			siteUrl: 'https://example.com',
+			sourceUrl: 'https://github.com/happyunicorngirlcute/Candy-Blossom',
+			isSourceCodeAvailable: true,
 			title: 'Candy Blossom',
 			desc: 'Application that uses Perenual API to fetch informations about plants, then calculate and tell you how you should treat them, Project was made using NextJs, and Symfony. I also did a android version, which I used ExpoJs for that.',
 			img: '/CandyBlossomScreenshot.png',
 		},
 		{
-			href: 'https://github.com/user/pulse',
-			title: 'Pulse',
-			desc: 'Real-time heartbeat monitor for server uptime, using WebSockets and D3 charts.',
-			img: '/placeholder.png',
+			siteUrl: '#',
+			sourceUrl: 'https://github.com/happyunicorngirlcute/DevExpress',
+			isSourceCodeAvailable: true,
+			title: 'DevExpress',
+			desc: 'My First NextJs project, I watched a youtube course in order to do it, all manually, I also learned how to use MONGODB and what is it, same for NextJs, the website is about showing conferences, and maybe join them',
+			img: '/DevExpressScreenshot.png',
 		},
 		{
-			href: 'https://github.com/user/meridian',
-			title: 'Meridian',
-			desc: 'E-commerce backend with Stripe integration, inventory management, and admin dashboards.',
-			img: '/placeholder.png',
+			siteUrl: 'https://magnesium.surge.sh',
+			sourceUrl: '',
+			isSourceCodeAvailable: false,
+			title: 'Magnesium',
+			desc: 'This is a project that was made with react and symfony (No NextJs), Postgre Database, Website that promotes a roblox exploit, license key system, admin system, reseller system, (even an age verification system, by using an api), source code is not available',
+			img: '/MagnesiumScreenshot.png',
 		},
 		{
-			href: 'https://github.com/user/solstice',
+			siteUrl: '#',
+			sourceUrl: 'https://github.com/user/solstice',
+			isSourceCodeAvailable: true,
 			title: 'Solstice',
 			desc: 'Weather app with animated maps, 7-day forecasts, and location-based alerts.',
 			img: '/placeholder.png',
 		},
 		{
-			href: 'https://github.com/user/cipherkeep',
+			siteUrl: '#',
+			sourceUrl: 'https://github.com/user/cipherkeep',
+			isSourceCodeAvailable: true,
 			title: 'CipherKeep',
 			desc: 'End-to-end encrypted password manager with biometric auth and cloud sync.',
 			img: '/placeholder.png',
 		},
 		{
-			href: 'https://github.com/user/arcadia',
+			siteUrl: '#',
+			sourceUrl: 'https://github.com/user/arcadia',
+			isSourceCodeAvailable: true,
 			title: 'Arcadia',
 			desc: 'Social platform for game devs to share prototypes, get feedback, and collaborate.',
 			img: '/placeholder.png',
@@ -63,7 +75,7 @@ export const Projects = () => {
 						className={`project-row ${index % 2 === 0 ? 'row-start' : 'row-end'}`}
 					>
 						<a
-							href={project.href}
+							href={project.siteUrl}
 							target='_blank'
 							rel='noopener noreferrer'
 							className='project-card'
@@ -74,12 +86,14 @@ export const Projects = () => {
 									alt={project.title}
 									className='project-image'
 								/>
-								<button
-									className='project-question-btn'
-									onClick={(e) => handleQuestionClick(e, index)}
-								>
-									?
-								</button>
+								{project.isSourceCodeAvailable && (
+									<button
+										className='project-question-btn'
+										onClick={(e) => handleQuestionClick(e, index)}
+									>
+										?
+									</button>
+								)}
 							</div>
 							<p className='project-title'>{project.title}</p>
 							<p className='project-desc'>{project.desc}</p>
@@ -91,13 +105,13 @@ export const Projects = () => {
 				<SectionTitle title='My' subTitle='PROJECTS' />
 			</div>
 
-			{openIndex !== null &&
+			{openIndex !== null && projects[openIndex].isSourceCodeAvailable &&
 				createPortal(
 					<div className='popup-overlay' onClick={handleBackdropClick}>
 						<div className='popup-card' onClick={(e) => e.stopPropagation()}>
 							<p className='popup-text'>Want to check the source code?</p>
 							<a
-								href={projects[openIndex].href}
+								href={projects[openIndex].sourceUrl}
 								target='_blank'
 								rel='noopener noreferrer'
 								className='popup-btn'
