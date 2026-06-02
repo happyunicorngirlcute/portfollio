@@ -3,8 +3,11 @@ import { IoMailOutline } from 'react-icons/io5';
 
 import { FloatingButton } from '../components/floating-button';
 import { GlowLink } from '../components/glow-box-link';
+import { useLang } from '../i18n/context';
 
 export const InfoSection = () => {
+	const { t } = useLang();
+
 	return (
 		<div className='hero-section'>
 			<FloatingButton
@@ -12,9 +15,9 @@ export const InfoSection = () => {
 				className='first'
 				href='/#about-me'
 			/>
-			<p>My name is</p>
-			<p className='name'>NAHIL</p>
-			<p>Full Stack Developer</p>
+			<p>{t.hero.myNameIs}</p>
+			<p className='name'>{t.hero.name}</p>
+			<p>{t.hero.title}</p>
 			<FloatingButton
 				label='Tech'
 				className='sec'

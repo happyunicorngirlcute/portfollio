@@ -4,6 +4,7 @@ import { SiDocker, SiExpo, SiFigma, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs
 
 import { GlowBox } from '../components/glow-box';
 import { SectionTitle } from '../components/section-title.component';
+import { useLang } from '../i18n/context';
 
 const techs = [
 	{
@@ -134,6 +135,10 @@ const techs = [
 ];
 
 export const TechStack = () => {
+	const { t } = useLang();
+
+	const headings = [t.tech.languages, t.tech.frameworks, t.tech.databases, t.tech.deployment];
+
 	return (
 		<section
 			className='tech-stack'
@@ -142,7 +147,7 @@ export const TechStack = () => {
 			<div className='tech-grid'>
 				{techs.map((tech, index) => (
 					<div key={index}>
-						<p>{tech.heading}</p>
+						<p>{headings[index]}</p>
 						<div className='tech-row'>
 							{tech.items.map((item, index) => (
 								<GlowBox
@@ -158,8 +163,8 @@ export const TechStack = () => {
 			</div>
 			<div>
 				<SectionTitle
-					title='Tech'
-					subTitle='STACK'
+					title={t.tech.title}
+					subTitle={t.tech.subTitle}
 				/>
 			</div>
 		</section>

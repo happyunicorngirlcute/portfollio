@@ -39,11 +39,6 @@
 	transform: scale(0.96);
 }
 
-.lang-toggle__icon {
-	font-size: 1.1rem;
-	line-height: 1;
-}
-
 .lang-toggle__arrow {
 	display: inline-block;
 	transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -132,16 +127,4 @@
 	color: var(--primaryFg) !important;
 }
 
-.lang-option__check {
-	margin-left: auto;
-	color: var(--primaryFg);
-	font-size: 0.75rem;
-	opacity: 0;
-	transform: scale(0);
-	transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
 
-.lang-option__check--visible {
-	opacity: 1;
-	transform: scale(1);
-}

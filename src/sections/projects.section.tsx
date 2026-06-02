@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { SectionTitle } from '../components/section-title.component';
+import { useLang } from '../i18n/context';
 
 export const Projects = () => {
+	const { t } = useLang();
 	const [openIndex, setOpenIndex] = useState<number | null>(null);
 
 	const handleQuestionClick = (e: React.MouseEvent, index: number) => {
@@ -21,7 +23,7 @@ export const Projects = () => {
 			sourceUrl: 'https://github.com/happyunicorngirlcute/Candy-Blossom',
 			isSourceCodeAvailable: true,
 			title: 'Candy Blossom',
-			desc: 'Application that uses Perenual API to fetch informations about plants, then calculate and tell you how you should treat them, Project was made using NextJs, and Symfony. I also did a android version, which I used ExpoJs for that.',
+			desc: t.projects.descriptions[0],
 			img: '/CandyBlossomScreenshot.png',
 		},
 		{
@@ -29,7 +31,7 @@ export const Projects = () => {
 			sourceUrl: 'https://github.com/happyunicorngirlcute/DevExpress',
 			isSourceCodeAvailable: true,
 			title: 'DevExpress',
-			desc: 'My First NextJs project, I watched a youtube course in order to do it, all manually, I also learned how to use MONGODB and what is it, same for NextJs, the website is about showing conferences, and maybe join them',
+			desc: t.projects.descriptions[1],
 			img: '/DevExpressScreenshot.png',
 		},
 		{
@@ -37,7 +39,7 @@ export const Projects = () => {
 			sourceUrl: '',
 			isSourceCodeAvailable: false,
 			title: 'Magnesium',
-			desc: 'This is a project that was made with react and symfony (No NextJs), Postgre Database, Website that promotes a roblox exploit, license key system, admin system, reseller system, (even an age verification system, by using an api), source code is not available',
+			desc: t.projects.descriptions[2],
 			img: '/MagnesiumScreenshot.png',
 		},
 		{
@@ -45,7 +47,7 @@ export const Projects = () => {
 			sourceUrl: 'https://github.com/happyunicorngirlcute/Paiement-Collaboratif',
 			isSourceCodeAvailable: true,
 			title: 'Paye Ton Pote',
-			desc: 'One of my first Symfony projects, transactions using Stripe API, authentifications and more. The project is in french. THe frontend was HEAVILY AI assisted, Because this project was kinda like a "pratice", I just focused more on the backend. Twig and PHP (Symfony Framework) used for this project. This project is not that good compared to the rest, only reason Im showcasing it is because of the transaction, this is guaranteed to get replaced once I do more projects ',
+			desc: t.projects.descriptions[3],
 			img: '/PayeTonPoteScreenshot.png',
 		},
 		// {
@@ -102,21 +104,21 @@ export const Projects = () => {
 				))}
 			</div>
 			<div>
-				<SectionTitle title='My' subTitle='PROJECTS' />
+				<SectionTitle title={t.projects.title} subTitle={t.projects.subTitle} />
 			</div>
 
 			{openIndex !== null && projects[openIndex].isSourceCodeAvailable &&
 				createPortal(
 					<div className='popup-overlay' onClick={handleBackdropClick}>
 						<div className='popup-card' onClick={(e) => e.stopPropagation()}>
-							<p className='popup-text'>Want to check the source code?</p>
+							<p className='popup-text'>{t.projects.popup}</p>
 							<a
 								href={projects[openIndex].sourceUrl}
 								target='_blank'
 								rel='noopener noreferrer'
 								className='popup-btn'
 							>
-								View Source
+								{t.projects.viewSource}
 							</a>
 						</div>
 					</div>,

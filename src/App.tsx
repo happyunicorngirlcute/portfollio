@@ -1,3 +1,4 @@
+import { LangProvider } from './i18n/context';
 import { LanguageSwitcher } from './components/language-switcher';
 import { MouseTrail } from './components/mouse-trail';
 import { ScrollBar } from './components/scroll-bar';
@@ -18,7 +19,7 @@ import './styles/title.css';
 
 function App() {
 	return (
-		<>
+		<LangProvider>
 			<LanguageSwitcher />
 			<ScrollBar />
 			<MouseTrail />
@@ -26,7 +27,7 @@ function App() {
 			<AboutMe />
 			<TechStack />
 			<Projects />
-		</>
+		</LangProvider>
 	);
 }
 

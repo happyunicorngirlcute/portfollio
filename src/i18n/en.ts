@@ -1,0 +1,44 @@
+export const en = {
+	hero: {
+		myNameIs: 'My name is',
+		name: 'NAHIL',
+		title: 'Full Stack Developer',
+	},
+	about: {
+		title: 'About',
+		subTitle: 'ME',
+		intro1: "Hi, I'm <strong>Nahil</strong>, a <strong>Full Stack</strong> Developer",
+		intro2: "I've been working with many languages and frameworks over this year, I specifically love coding with <strong>Symfony</strong> and <strong>NextJs</strong>, but I also have experience with <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>React</strong>... And more!",
+		intro3: "I enjoy solving problems, learning new things, and experimenting with different technologies. When I'm not coding, I'm probably working on a personal project or exploring something new. (Or I usually just play video games if not coding)",
+		experience: 'Experience',
+		education: 'Education',
+		experienceItems: [
+			'Created and maintained web applications using <strong>Symfony</strong> and <strong>NextJs</strong>, did many small projects, showcased below tech stack.',
+			'Designed and developed several mobile applications with <strong>ExpoJs</strong>, like Candy Blossom, an application that helps you take care of your plant.',
+			'I also built this website, which is part of my projects.',
+		],
+		developer: 'Full Stack Developer',
+		developerTraining: 'Developer Training',
+		garageDesc: "I recently joined this formation to become a developer. I'm fascinated by by coding and aim to become a backend expert, but I also enjoy frontend development and have experience with it.",
+	},
+	tech: {
+		title: 'Tech',
+		subTitle: 'STACK',
+		languages: 'Languages & Runtimes I work With',
+		frameworks: 'Frameworks & Tools',
+		databases: 'Databases I Use',
+		deployment: 'Deployment Services I use',
+	},
+	projects: {
+		title: 'My',
+		subTitle: 'PROJECTS',
+		popup: 'Want to check the source code?',
+		viewSource: 'View Source',
+		descriptions: [
+			'Application that uses Perenual API to fetch informations about plants, then calculate and tell you how you should treat them. Project was made using NextJs, and Symfony. I also did an android version, which I used ExpoJs for.',
+			'My first NextJs project, I watched a YouTube course in order to do it all manually. I learned how to use MongoDB and what it is, same for NextJs. The website is about showing conferences and maybe joining them.',
+			'This project was made with React and Symfony (no NextJs), PostgreSQL database. Website that promotes a Roblox exploit, license key system, admin system, reseller system, even an age verification system by using an API. Source code is not available.',
+			'One of my first Symfony projects, transactions using Stripe API, authentifications and more. The project is in French. The frontend was heavily AI assisted because this project was kind of a practice — I focused more on the backend. Twig and PHP (Symfony Framework) used.',
+		],
+	},
+};
