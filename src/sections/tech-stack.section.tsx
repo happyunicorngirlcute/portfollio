@@ -1,6 +1,6 @@
 import { FiUploadCloud } from 'react-icons/fi';
 import { FaCss3Alt, FaHtml5, FaJs, FaPhp, FaReact } from 'react-icons/fa';
-import { SiClaude, SiDocker, SiExpo, SiFigma, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPostgresql, SiRailway, SiRender, SiSymfony, SiTailwindcss, SiTypescript, SiVercel, SiYaml } from 'react-icons/si';
+import { SiDocker, SiExpo, SiFigma, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPostgresql, SiRailway, SiRender, SiSymfony, SiTailwindcss, SiTypescript, SiVercel, SiYaml } from 'react-icons/si';
 
 import { GlowBox } from '../components/glow-box';
 import { SectionTitle } from '../components/section-title.component';

@@ -51,7 +51,7 @@ export const AboutMe = () => {
 				<div className='intro'>
 					<p style={{ marginTop: '24px' }}>
 
-						Hi, I'm <strong>Nahil</strong>, a <strong>Full Stack Developer</strong>
+						Hi, I'm <strong>Nahil</strong>, a <strong>Full Stack</strong> Developer
 					</p>
 					<p>
 						I've been working with many languages and frameworks over this year, I specifically love coding with <strong>Symfony</strong> and <strong>NextJs</strong>, but I also have experience with <strong>JavaScript</strong>, <strong>TypeScript</strong>,  <strong>React</strong>... And more!
@@ -59,7 +59,7 @@ export const AboutMe = () => {
 					<p>
 						I enjoy solving problems, learning new things, and experimenting with
 						different technologies. When I'm not coding, I'm probably working on
-						a personal project or exploring something new. (That's a lie, I usually just play video games if not coding)
+						a personal project or exploring something new. (Or I usually just play video games if not coding)
 					</p>
 				</div>
 				<div>
