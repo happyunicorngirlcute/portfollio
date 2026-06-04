@@ -39,6 +39,7 @@ export const en = {
 			'My first NextJs project, I watched a YouTube course in order to do it all manually. I learned how to use MongoDB and what it is, same for NextJs. The website is about showing conferences and maybe joining them.',
 			'This project was made with React and Symfony (no NextJs), PostgreSQL database. Website that promotes a Roblox exploit, license key system, admin system, reseller system, even an age verification system by using an API. Source code is not available.',
 			'One of my first Symfony projects, transactions using Stripe API, authentifications and more. The project is in French. The frontend was heavily AI assisted because this project was kind of a practice — I focused more on the backend. Twig and PHP (Symfony Framework) used.',
+			'My first electron application, the backend was fully made by me, the frontend was a bit AI assisted, stil did most of it manually, the application grabs your cpu usage, ram and storage to show it, I followed a youtube tutorial to do it, I learned how to use electron and how it works. Project is in typescript (React vite) and electron. Source code available.',
 		],
 	},
 };

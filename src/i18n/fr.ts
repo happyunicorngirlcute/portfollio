@@ -39,6 +39,7 @@ export const fr = {
 			'Mon premier projet NextJs, j\'ai suivi un cours YouTube pour le faire entièrement manuellement. J\'ai appris à utiliser MongoDB et ce que c\'est, de même pour NextJs. Le site sert à afficher des conférences et éventuellement y participer.',
 			'Ce projet a été réalisé avec React et Symfony (pas de NextJs), base de données PostgreSQL. Site qui fait la promotion d\'un exploit Roblox, système de clés de licence, système admin, système de revendeur, même un système de vérification d\'âge via une API. Le code source n\'est pas disponible.',
 			'Un de mes premiers projets Symfony, transactions avec l\'API Stripe, authentifications et plus. Le projet est en français. Le frontend a été fortement assisté par IA car ce projet était une sorte de pratique — je me suis concentré sur le backend. Twig et PHP (Framework Symfony) utilisés.',
+			'Ma première application Electron, le backend a été entièrement réalisé par moi, le frontend était un peu assisté par IA, j\'ai quand même fait la plupart manuellement. L\'application récupère votre utilisation du CPU, de la RAM et du stockage pour les afficher. J\'ai suivi un tutoriel YouTube pour la réaliser, j\'ai appris à utiliser Electron et comment ça fonctionne. Le projet est en TypeScript (React Vite) et Electron. Code source disponible.',
 		],
 	},
 };

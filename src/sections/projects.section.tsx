@@ -50,6 +50,15 @@ export const Projects = () => {
 			desc: t.projects.descriptions[3],
 			img: '/PayeTonPoteScreenshot.png',
 		},
+
+			{
+			siteUrl: '#',
+			sourceUrl: 'https://github.com/happyunicorngirlcute/Paiement-Collaboratif',
+			isSourceCodeAvailable: true,
+			title: 'Bob',
+			desc: t.projects.descriptions[4],
+			img: '/Bob.png',
+		},
 		// {
 		// 	siteUrl: '#',
 		// 	sourceUrl: 'https://github.com/user/cipherkeep',
